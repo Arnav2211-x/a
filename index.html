@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberLock Inc.</title>
+  <meta name="description" content="CyberLock - Next-Gen Cybersecurity Platform">
+  <meta property="og:title" content="CyberLock Inc." />
+  <meta property="og:description" content="Next-Gen Cybersecurity Platform" />
+  <meta property="og:image" content="https://www.igloo.inc/assets/images/social.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.igloo.inc/assets/favicon32-af94112f.png" />
+
+  <!-- Model Viewer -->
+  <script type="module" src="jsscript.js"></script>
+
+  <!-- Fonts & Styling -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0f1115, #000000);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 80vh;
+      display: block;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CyberLock Inc.</h1>
+    <p>Secure the Future, One Lock at a Time</p>
+  </header>
+
+  <!-- Your .glb file must be named 'lock.glb' and in same folder -->
+  <model-viewer src="lock.glb" alt="Cyber Lock 3D Model"
+    auto-rotate camera-controls
+    background-color="#000000" exposure="1.5" shadow-intensity="1"
+    disable-zoom ar>
+  </model-viewer>
+
+  <footer>
+    &copy; 2025 CyberLock Inc. | All rights reserved
+  </footer>
+</body>
+</html>
